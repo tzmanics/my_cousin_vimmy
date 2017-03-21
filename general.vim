@@ -1,7 +1,7 @@
 syntax enable
 set background=dark
 
-" solarized options 
+" solarized options
   let g:solarized_termcolors=256
   colorscheme solarized
 
@@ -34,7 +34,7 @@ set background=dark
   set backspace=2
 
 " turn on mouse
-  set mouse=a
+"  set mouse=a
 
 " use system clipboard
   set clipboard=unnamed
@@ -45,3 +45,8 @@ set background=dark
 " Toggle spell checking on and off
   nmap <silent> <leader>s :set spell!<CR>
   set spell spelllang=en_us
+
+" cursor change in insert mode
+  let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+  let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+  let &t_EI = "\<Esc>]50;CursorShape=0\x7"
